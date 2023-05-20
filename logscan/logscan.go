@@ -86,9 +86,9 @@ func processFormat(format, date, tyme, datetime string) (*regexp.Regexp, string,
 		case "status":
 			p = `\d{3}`
 		case "http":
-			p = `HTTP/[\d.]+`
+			p = `HTTP\/[\d.]+`
 		case "path":
-			p = `/.*?`
+			p = `\/.*?`
 		case "timing_sec":
 			p = `[\d.]+`
 		case "timing_milli", "timing_micro":
